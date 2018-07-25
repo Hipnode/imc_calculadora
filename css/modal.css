@@ -1,0 +1,62 @@
+.modal{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	padding: 100px;
+	
+	display: none;
+	
+}
+
+.modal.active{
+	
+	display: block;
+	
+}
+
+.modal-interno{
+	width: 60%;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+}
+
+.modal.active .modal-interno{
+	animation-name: toptocenter;
+	animation-duration: .5s;
+}
+
+.modal-header{
+	text-align: left;
+	padding: 20px 50px;
+	background-color: #FFF;
+	border-bottom: 1px solid #EAEAE8;
+	height: 80px;
+}
+
+.modal-content{
+	
+	text-align: left;
+	padding: 20px 50px;
+	background-color: #FFF;
+}
+
+.modal-header h2{
+	float: left;
+}
+
+.modal-header span{
+	float: right;
+	font-size: 36px;
+	cursor: pointer;
+}
+
+@keyframes toptocenter{
+	from{ margin-top: -300px; }
+	to{
+		margin-top: 0;
+	}
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calcular IMC</title>
+	<link rel="stylesheet" type="text/css" href="css/site.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
+</head>
+<body>
+
+	<header>
+		<nav>
+			<div class="container">
+				<h1>Gestão de Pacientes</h1>
+			</div>
+		</nav>
+	</header>
+	
+	<div class="container">
+
+	
+		<section class="meus_pacientes">
+			
+			<h2>Pacientes Cadastrados</h2>
+			<table>
+				<thead>
+					<th>Nome</th>
+					<th>Altura</th>
+					<th>Peso</th>
+					<th>IMC</th>
+					<th>Informações adicionais</th>
+					<th>Ações</th>
+				</thead>
+				
+				<tbody>
+					
+				</tbody>
+			</table>
+			
+			<input type="button" value="Calcular IMC" id="btnCalcular">
+		</section>
+		
+		<section class="adicionar_pacientes">
+		
+			<h2>Adicionar novos pacientes</h2>
+			<form>
+				<div class="input-group">
+					<label>Nome </label>
+					<input type="text" id="nome" placeholder="Digite seu nome aqui...">
+				</div>
+				
+				<div class="input-group">
+					<label>Altura </label>
+					<input type="number" id="altura" placeholder="Digite sua altura aqui...">
+				</div>
+				
+				<div class="input-group">
+					<label>Peso </label>
+					<input type="number" id="peso" placeholder="Digite seu peso aqui...">
+				</div>	
+				
+				<input type="button" value="Adicionar" id="btnAdicionar">	
+			</form>
+		</section>
+	
+	</div>
+
+	<div class="modal">
+		<div class="modal-interno">
+			<div class="modal-header">
+				<h2>Informações sobre o paciente</h2>
+				<span class="btnFechar" onclick="closeModal()">&times;</span>
+			</div>
+
+			<div class="modal-content">
+				<p><strong>Situação: </strong><span id="imcInfo"></span></p>
+			</div>
+		</div>	
+	</div>
+	<script type="text/javascript" src="js/paciente.js"></script>
+	<script type="text/javascript" src="js/modal.js"></script>
+	<script type="text/javascript" src="js/adicionarPacientes.js"></script>
+	<script type="text/javascript" src="js/calcularImc.js"></script>
+	<script type="text/javascript" src="js/acoes.js"></script>
+	<script type="text/javascript" src="js/informacoes.js"></script>
+
+</body>
+</html>
